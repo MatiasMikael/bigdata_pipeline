@@ -1,0 +1,24 @@
+# Sorted Names and Emails
+SELECT name, email 
+FROM `bigdata-pipeline-447012.processed_data.bigquery_ready_data` 
+ORDER BY name ASC LIMIT 100;
+
+# Total User Count
+SELECT COUNT(*) AS total_users 
+FROM `bigdata-pipeline-447012.processed_data.bigquery_ready_data`;
+
+# Helsinki Redidents
+SELECT name, phone 
+FROM `bigdata-pipeline-447012.processed_data.bigquery_ready_data` 
+WHERE address LIKE '%Helsinki%';
+
+# Name Contains 'Joonas'
+SELECT * 
+FROM `bigdata-pipeline-447012.processed_data.bigquery_ready_data` 
+WHERE name LIKE '%Joonas%';
+
+# Reserve Name Order
+SELECT * 
+FROM `bigdata-pipeline-447012.processed_data.bigquery_ready_data` 
+ORDER BY name DESC 
+LIMIT 50;

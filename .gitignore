@@ -1,0 +1,8 @@
+# Ignore environment variables file
+.env
+
+# Ignore Python virtual environment folder
+venv/
+
+# Ignore credentials folder containing sensitive information
+credentials/
